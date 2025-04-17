@@ -1,0 +1,14 @@
+command to remove all the volumes :
+    docker system prune -af
+
+commands to test nginx accessibility:
+    curl http://localhost
+    curl https://localhost:443
+    curl http://localhost:80
+
+command to login into mariadb as root:
+    docker exec -it mariadb mysql -u root
+
+command to login into mariadb as a user:
+    docker exec -it mariadb mysql -u sql_user -p
+    SHOW DATABASES;
